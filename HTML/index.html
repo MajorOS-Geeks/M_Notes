@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Major Notes App</title>
+    <link rel="stylesheet" type="text/css" href="/Notes Project/CSS/styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://uploads-ssl.webflow.com/5aa3c4fc80d0970001ec334f/css/designnotes.webflow.903146f70.min.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="//cdn.shopify.com/s/files/1/0027/9527/4276/t/6/assets/theme.scss.css?441">
+    <link rel="stylesheet" href="https://www.scrumbs.app/public/css/scrumbs-stylesheet.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/nolan/64/000000/note.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" onclick="editMyText(`noteText1`);" href="#">Major Notes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/Notes Project/HTML/trash.html">Trash<span
+                            class="sr-only">(current)></span></a>
+                </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" id="searchTxt" placeholder="Search all notes..."
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="searchButton" type="submit">Search</button>
+                <button id="myJarvis" style="width: 45px; height: 45px;" class="btn btn-outline-success my-2 mx-3 my-sm-0"><i class="fa fa-microphone"
+                        style="font-size:33px;color:red"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div id="addNoteStatus"> </div>
+    <div class="container my-3">
+        <h1>Major Notes</h1>
+        <div class="my-2 mx-2 card" style="width: 50rem">
+            <div class="my-2 mx-2 card-body">
+                <h5 class="my-2 mx-2 card-title">Add a note title</h5>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="addTitle">
+                </div>
+                <h5 class="my-2 mx-2 card-title">Add a note</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addText" rows="3"></textarea>
+                </div>
+                <button style="text-align: left" class="primary-button" id="addBtn">Add Note</button>
+            </div>
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div id="cardNotes" class="row container-fluid"> </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+<script src="/Notes Project/JS/app.js"></script>
+
+</html>
